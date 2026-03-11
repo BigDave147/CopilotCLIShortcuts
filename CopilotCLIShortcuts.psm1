@@ -27,9 +27,9 @@ function co {
     )
     $extra = @()
     if ($Arguments.Count -gt 0 -and $Arguments[0] -notlike '-*') {
-        $extra = @('-i')
+        $extra = @('-p')
     }
-    & copilot --model claude-sonnet-4.6 --allow-all-tools --silent -p @extra @Arguments
+    & copilot --model claude-sonnet-4.6 --allow-all-tools --silent @extra @Arguments
 }
 
 function ico {
@@ -91,9 +91,9 @@ function coo {
     )
     $extra = @()
     if ($Arguments.Count -gt 0 -and $Arguments[0] -notlike '-*') {
-        $extra = @('-i')
+        $extra = @('-p')
     }
-    & copilot --model claude-opus-4.6 --allow-all-tools --silent -p @extra @Arguments
+    & copilot --model claude-opus-4.6 --allow-all-tools --silent @extra @Arguments
 }
 
 function icoo {
@@ -155,8 +155,8 @@ function coh {
         [string[]] $Arguments
     )
     $extra = @()
-    if ($Arguments.Count -gt 0 -and $Arguments[0] -notlike '-*') { $extra = @('-i') }
-    & copilot --model claude-haiku-4.6 --allow-all-tools --silent -p @extra @Arguments
+    if ($Arguments.Count -gt 0 -and $Arguments[0] -notlike '-*') { $extra = @('-p') }
+    & copilot --model claude-haiku-4.6 --allow-all-tools --silent @extra @Arguments
 }
 
 function icoh {
@@ -216,8 +216,8 @@ function cog {
         [string[]] $Arguments
     )
     $extra = @()
-    if ($Arguments.Count -gt 0 -and $Arguments[0] -notlike '-*') { $extra = @('-i') }
-    & copilot --model gemini-3-pro-preview --allow-all-tools --silent -p @extra @Arguments
+    if ($Arguments.Count -gt 0 -and $Arguments[0] -notlike '-*') { $extra = @('-p') }
+    & copilot --model gemini-3-pro-preview --allow-all-tools --silent @extra @Arguments
 }
 
 function icog {
